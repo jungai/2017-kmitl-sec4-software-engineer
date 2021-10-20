@@ -1,0 +1,277 @@
+html {
+    zoom: 0.85;
+}
+body{
+	background-color: #322d2a;
+	font-family: 'Kanit';
+	position: relative;
+}
+
+#logo{
+	margin-top: 10px;
+	max-height: 100px;
+}
+
+.search-box{
+	margin: 0;
+	margin-top: 40px;
+	padding: 0;
+	width: 400px;
+}
+
+.navbar{
+	border-radius: 0px;
+}
+
+.navbar-nav li a{
+	line-height: 100px;
+}
+
+#map-container{
+	display: block;
+	height: 600px;
+	width: auto;
+	margin: 30px;
+	overflow: hidden;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	position: relative;
+	cursor: move;
+}
+
+#drag-map{
+	right: 5%;
+	top: -55%;
+	pointer-events: none;
+	position: relative;
+	user-select: none;
+}
+
+.bottom{
+	margin-top: 3%;
+	margin-left: 12.5%;
+}
+
+/* The Modal (background) */
+.modal {
+  /*  display: none; /* Hidden by default */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+
+	}
+
+/* Modal Content */
+.modal-content {
+    position: absolute;
+		left :1.5%;
+    bottom: 0;
+    background-color:#ffe293;
+		height: 70%;
+    width: 97%;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s
+		/*border-radius: 12px;*/
+		boder: 0px;
+		border-color: #322d2a;
+
+}
+
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.modal-header .close {
+  margin-top: 1%;
+}
+.close:hover,
+.close:focus {
+    color: #ffe293;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+		border: 0px;
+		margin-left: 0%;
+    padding: 0px 16px;
+    background-color: #322d2a;
+    color: white;
+}
+
+.modal-body {padding: 0px 16px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #ffe293;
+    color: white;
+		border-top: 0px;
+}
+.button {
+
+	background-color: #4CAF50; /* Green */
+	border: none;
+	color: white;
+	padding: 16px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+	cursor: pointer;
+}
+
+.button1 {
+	background-color: #b1afb1;
+	color: black;
+	border: 2px solid #b1afb1;
+	border-radius: 20px;
+}
+
+.button1:hover {
+	background-color: #f26423;
+	color: black;
+	border: 2px solid #ffd566;
+	border-radius: 20px;
+}
+.button2 {
+	background-color: #b1afb1;
+	color: black;
+	border: 2px solid #b1afb1;
+	border-radius: 20px;
+}
+
+.button2:hover {
+	background-color: #f26423;
+	color: black;
+	border: 2px solid #ffd566;
+	border-radius: 20px;
+}
+.button3 {
+	background-color: #b1afb1;
+	color: black;
+	border: 2px solid #b1afb1;
+	border-radius: 20px;
+}
+
+.button3:hover {
+	background-color: #f26423;
+	color: black;
+	border: 2px solid #ffd566;
+	border-radius: 20px;
+}
+.button4 {
+	background-color: #b1afb1;
+	color: black;
+	border: 2px solid #b1afb1;
+	border-radius: 20px;
+}
+
+.button4:hover {
+	background-color: #f26423;
+	color: black;
+	border: 2px solid #ffd566;
+	border-radius: 20px;
+}
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+body {font-family: "Lato", sans-serif;}
+
+.tablink {
+		border-radius: 20px;
+		margin: 10px;
+    background-color: #555;
+    color: black;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 1px;
+    font-size: 17px;
+    width: 20%;
+}
+button.tablink{
+	margin-bottom: 0px;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+.tablink:hover {
+    background-color: #777;
+}
+
+/* Style the tab content */
+.tabcontent {
+    color: black;
+    display: none;
+
+    text-align: center;
+}
+.cbutton{
+	display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #f56800;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+
+}
+.cbutton:hover {background-color: #ef5b00}
+
+.cbutton:active {
+  background-color: #ef5b00;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.check {
+	font-size: 150%;
+}
+.row{
+	margin-top: 50px;
+}
+
+#London {background-color:#ffe293;}
+#Paris {background-color:#ffe293;}
+#Tokyo {background-color:#ffe293;}
+#Oslo {background-color:#ffe293;}
